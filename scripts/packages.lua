@@ -1,7 +1,7 @@
 local cpm_str = ""
 for _, dep in pairs(project.dependencies) do
   cpm_str = cpm_str .. "CPMAddPackage(\n" 
-  .. "NAME"  .. dep.name .. "\n"
+  .. "NAME  "  .. dep.name .. "\n"
   .. "GITHUB_REPOSITORY " .. dep.git_short .. "\n"
   .. "GIT_TAG " .. dep.selected_version .. "\n"
   .. ")"
