@@ -4,7 +4,7 @@ for _, dep in pairs(project.dependencies) do
   .. "\tNAME  "  .. dep.name .. "\n"
   .. "\tGIT_REPOSITORY \"" .. dep.git .. "\"".. "\n"
   .. "\tGIT_TAG " .. dep.selected_version .. "\n"
-  .. ")"
+  .. ")\n"
 end
 return cpm_str
 
